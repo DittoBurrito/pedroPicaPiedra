@@ -6,9 +6,9 @@ while (respuestaEncuesta == "1") {
 
     if (valorProducto < 10000) {
         alert("La ganancia es " + ganancia);
-
-    respuestaEncuesta = prompt("¿Desea ingresar otro producto? 1. Sí 2. No");
+    } else if (valorProducto >= 10000 && valorProducto < 50000){
+        alert("El valor del producto supera los 10.000, la ganancia es " + (ganancia * 2));
+    
+    
+        respuestaEncuesta = prompt("¿Desea ingresar otro producto? 1. Sí 2. No");
 }
-
-
-
